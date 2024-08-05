@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: #110E1B;
+    font-family: "JetBrains Mono", monospace;
+}
+
+.main-page{
+    width: 100vw;
+}
+
+.left-right{
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+}
+
+.header{
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-color: #191528;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-header{
+    width: 27vw;
+    display: flex;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.right-header{
+    width: 27vw;
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.right-header > a{
+    margin: 0px 5px 0px 25px;
+    color: #ffffff;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.left-header > h2 > a{
+    color: #F10E43;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.left{
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apr{
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    transition: all 0.2s;
+}
+
+.apr > h1{
+    font-size: 25px;
+    color: #BD1A41;
+}
+
+.h1-strong{
+    font-weight: 750;
+    color: #31d271;
+}
+
+.apr > h2{
+    font-size: 20px;
+    color: #000000;
+    margin-top: 1.2px;
+    margin-bottom: 2px
+}
+
+.apr > h3{
+    font-weight: 400;
+    font-size: 13px;
+    color: #000000;
+    margin-top: 5px;
+}
+
+.social{
+    width: 15rem;
+    padding: 20px;
+    display: inline;
+    border-radius: 45px;
+    margin-top: 45px;
+    background-color: #BD1A41;
+    box-shadow: 0px 10px 20px 10px rgba(189, 26, 65, 5%);
+}
+
+.social > h4{
+    text-align: center;
+    color: #ffffff;
+    margin: 2%;
+}
+
+.img-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-social > a{
+    height: 30px;
+    display: flex;
+    margin: 5px 15px;
+    text-decoration: none;
+}
+
+.img-social > a > i{
+    display: flex;
+    margin-top: -5px;
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.img-social > a > i:hover{
+    transition: color 0.3s;
+    color: #39000d;
+}
+
+.right{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.right > img{
+    height: 36rem;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.5));
+}
+
+@media only screen and (width <= 980px) {
+    .right {
+        display: none;
+    }
+
+    .left-right{
+        display: flex;
+        justify-content: center;
+    }
+
+    .apr{
+        width: 75vw;
+    }
+}
+
+
